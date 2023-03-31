@@ -1,0 +1,24 @@
+{
+    "name": "micheledef/encrypt-decrypt",
+    "description": "Encrypt and Decrypt with a secret key",
+    "keywords": ["encrypt", "decrypt", "php", "encrypt-decrypt", "secret key"],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Micheledef\\EncryptDecrypt\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MicheleDeF",
+            "email": "defalco_michele@libero.it",
+            "homepage": "https://github.com/MicheleDeF",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.2"
+    }
+}
