@@ -2,22 +2,56 @@
 
 namespace Micheledef\EncryptDecrypt;
 
+/**
+ * Encrypt
+ */
 class Encrypt{
 
+    /**
+     * string
+     *
+     * @var mixed
+     */
     public $string;
     public $key;
 
+    /**
+     * __construct
+     *
+     * @param string $string
+     * @param string $key
+     * @return void
+     */
     public function __construct(string $string, string $key)
     {
         $this->string = $string;
         $this->key = $key;
     }
 
+    /**
+     * __toString
+     *
+     * @return void
+     */
     public function __toString()
     {
+        /**
+         * encrypt
+         *
+         * @param string $string
+         * @param string $key
+         * @return void
+         */
         return  $this->encrypt($this->string , $this->key);
     }
 
+    /**
+     * encrypt
+     *
+     * @param string $string
+     * @param string $key
+     * @return void
+     */
     public function encrypt(string $string, string $key) {
 		$result = '';
 		
